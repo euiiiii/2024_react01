@@ -99,7 +99,8 @@ function App() {
       <CourseListCard />
     </main>
      */}
-      <Library />
+      {/* <Library /> */}
+      <CourseListCard />
     </div>
   );
 }

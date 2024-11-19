@@ -12,6 +12,8 @@ import TextList2 from "./components/step06/TextList2";
 import TextList3 from "./components/step06/TextList3";
 import Event01 from "./components/step07/Event01";
 import Event02 from "./components/step07/Event02";
+import CourseListCard08 from "./components/step08/CourseListCard08";
+import Count from "./components/step08/Count";
 
 /*
 function Header() {
@@ -87,6 +89,11 @@ function App() {
       <Event01 />
       <hr />
       <Event02 />
+      <hr />
+      <CourseListCard08 items={items} />
+      <hr />
+      <Count />
+      <br /><br /><br /><br /><br /><br />
     </div>
   );
 }

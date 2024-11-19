@@ -32,14 +32,10 @@ function CommentList(props) {
                 comments.map((k) => {
                     return(
                         <Comment name={k.name} comment={k.comment} />
-
-
                     )
                 })
             }
         </div>
     );
 }
-
-
 export default CommentList;

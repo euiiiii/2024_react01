@@ -1,6 +1,6 @@
 import React from "react";
 
-function Courseitem(props) {
+// function Courseitem(props) {
   // 방법 1
   // const title = '입문자를 위한 HTML, CSS 웹 개발 입문';
   // const description = '웹 개발에 필요한 기본 지식을 배웁니다.';
@@ -16,7 +16,7 @@ function Courseitem(props) {
   //   alt : '강의 이미지'
   // }
   
-  return (
+  // return (
   // 방법1
   //   <article class="course">
   //     <img class="course__img" src={img} alt={alt} style={{width:100}}/>
@@ -39,14 +39,28 @@ function Courseitem(props) {
 //     </article>
 //   );
 // }
+    // <article class="course">
+    //   <img class="course__img" src={props.img} alt="강의 이미지" style={{width:100}}/>
+    //   <div class="course__body">
+    //     <div className="course__title">{props.title}</div>
+    //     <div className="course__description">{props.description}
+    //     </div>
+    //   </div>
+    // </article>
+//   );
+// }
+
+// props의 구조 할당: props로 받지 않고 속성 그대로 받기
+function Courseitem({title, description, img}) {
+  return(
     <article class="course">
-      <img class="course__img" src={props.img} alt="강의 이미지" style={{width:100}}/>
-      <div class="course__body">
-        <div className="course__title">{props.title}</div>
-        <div className="course__description">{props.description}
-        </div>
+    <img class="course__img" src={img} alt="강의 이미지" style={{width:100}}/>
+    <div class="course__body">
+      <div className="course__title">{title}</div>
+      <div className="course__description">{description}
       </div>
-    </article>
+    </div>
+  </article>
   );
 }
 export default Courseitem;

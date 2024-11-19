@@ -1,5 +1,6 @@
 import Courseitem from "./Courseitem";
 
+// 부모
 function CourseListCard(props) {
   return (
     <>

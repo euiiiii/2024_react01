@@ -4,12 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import App2 from './App2';
+import Comment from './components/step03/Comment';
+import CommentList from './components/step03/CommentList';
+import Welcome from './components/step03/Welcome';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(  // 렌더링: 화면단 만드는 거
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
     {/* <App2/>  */}
+    <CommentList />
+    <Welcome name='hong' />
+    <Welcome name='park' />
   </React.StrictMode>
 );
 
